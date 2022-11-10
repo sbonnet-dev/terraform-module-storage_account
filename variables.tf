@@ -3,11 +3,6 @@ variable "name" {
   description = "Resource group name"
 }
 
-variable "rg_name" {
-    type = string
-    description = "Resourcre group name"
-}
-
 variable "rg_type" {
   type        = string
   description = "Specify the prefix name of the resource group"
