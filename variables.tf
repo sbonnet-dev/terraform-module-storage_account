@@ -4,7 +4,7 @@ variable "name" {
 }
 
 variable "rg_name" {
-    value = string
+    type = string
     description = "Resourcre group name"
 }
 
