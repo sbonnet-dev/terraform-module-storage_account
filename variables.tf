@@ -3,6 +3,11 @@ variable "name" {
   description = "Resource group name"
 }
 
+variable "rg_name" {
+    value = string
+    description = "Resourcre group name"
+}
+
 variable "rg_type" {
   type        = string
   description = "Specify the prefix name of the resource group"
@@ -47,4 +52,31 @@ variable "location" {
     ], var.location)
     error_message = "The location value is invalid."
   }
+}
+
+variable "project" {
+  type        = string
+  description = "Project name"
+}
+
+variable "owner" {
+  type        = string
+  description = "Owner"
+}
+
+variable "rg_name" {
+  type        = string
+  description = "Resouce group name"
+}
+
+variable "account_tier" {
+  type        = string
+  description = "Account tier"
+  default     = "Standard"
+}
+
+variable "account_replication_type" {
+  type        = string
+  description = "Account Replication type"
+  default     = "GRS"
 }
