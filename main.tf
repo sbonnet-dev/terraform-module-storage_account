@@ -1,5 +1,6 @@
 resource "azurerm_storage_account" "storage_account" {
-  name = lower(format("%s%s%s", var.rg_type, var.environment, var.name))
+  
+  name     = lower(format("sa-%s-%s-%s", var.project, var.environment, var.name))
 
   location                 = var.location
   resource_group_name      = var.rg_name
